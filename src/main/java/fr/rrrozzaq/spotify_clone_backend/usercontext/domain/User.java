@@ -1,10 +1,11 @@
 package fr.rrrozzaq.spotify_clone_backend.usercontext.domain;
 
+import fr.rrrozzaq.spotify_clone_backend.sharedkernel.domain.AbstractAuditingEntity;
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "spotify_user")
-public class User {
+public class User extends AbstractAuditingEntity<Long> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "userSequenceGenerator")
