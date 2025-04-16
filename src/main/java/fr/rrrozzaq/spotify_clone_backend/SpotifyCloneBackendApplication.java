@@ -13,6 +13,8 @@ public class SpotifyCloneBackendApplication {
 		System.setProperty("postgres_db", dotenv.get("postgres_db"));
 		System.setProperty("postgres_username", dotenv.get("postgres_username"));
 		System.setProperty("postgres_password", dotenv.get("postgres_password"));
+		System.setProperty("auth0_client_id", dotenv.get("auth0_client_id"));
+		System.setProperty("auth0_client_secret", dotenv.get("auth0_client_secret"));
 
 		SpringApplication.run(SpotifyCloneBackendApplication.class, args);
 	}
