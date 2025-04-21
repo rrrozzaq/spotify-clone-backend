@@ -1,5 +1,5 @@
 package fr.rrrozzaq.spotify_clone_backend.usercontext;
 
-public class ReadUserDTO {
+public record ReadUserDTO(String firstName, String lastName, String email, String imageUrl) {
     
 }
